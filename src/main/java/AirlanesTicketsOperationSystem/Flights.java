@@ -10,7 +10,7 @@ public class Flights {
     private LocalDateTime arrivalTime;
     private int flightNumber;
 
-    public Flights(String model, String departureAirport, String arrivalAirport, LocalDateTime departureTime, LocalDateTime arrivalTime, int flightNumber) {
+    public Flights(String model, String departureAirport, String arrivalAirport, LocalDateTime departureTime, LocalDateTime arrivalTime) {
         this.model = model;
         this.departureAirport = departureAirport;
         this.arrivalAirport = arrivalAirport;
