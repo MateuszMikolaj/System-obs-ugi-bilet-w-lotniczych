@@ -128,7 +128,7 @@ public class Administrator {
         String dataWylotu = input.nextLine();
 
         for (int i = 0; i < listaLotow.size(); i++) {
-            Flights lot = listaLotow.get(i);
+            Flight lot = listaLotow.get(i);
             if (lot.getDepartureTime().equals(dataWylotu)) {
                 listaLotow.remove(i);
                 System.out.println("Lot usunięty pomyślnie!");
@@ -160,7 +160,7 @@ public class Administrator {
         System.out.println("Podaj ID lotu : ");
         int flightNumber = scanner.nextInt();
 
-        Flights nowyLot = new Flights(model, departureAirport, arrivalAirport, departureTime, arrivalTime, flightNumber );
+        Flight nowyLot = new Flight(model, departureAirport, arrivalAirport, departureTime, arrivalTime, flightNumber );
         listaLotow.add(nowyLot);
 
         System.out.println("Lot dodany pomyślnie!");
